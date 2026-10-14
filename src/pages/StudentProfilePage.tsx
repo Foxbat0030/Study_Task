@@ -166,7 +166,7 @@ export function StudentProfilePage({ studentId, onBack }: StudentProfilePageProp
       </div>
 
       {/* Tab content */}
-      {activeTab === 'overview' && <OverviewTab student={student} subjects={subjects} marks={marks} attendance={attendance} assignments={assignments} overallPct={overallPct} grade={grade} attendanceStats={attendanceStats} subjectMap={subjectMap} />}
+      {activeTab === 'overview' && <OverviewTab student={student} subjects={subjects} marks={marks} assignments={assignments} overallPct={overallPct} grade={grade} attendanceStats={attendanceStats} subjectMap={subjectMap} />}
       {activeTab === 'attendance' && <AttendanceTab attendance={attendance} subjectMap={subjectMap} perSubjectAttendance={perSubjectAttendance} stats={attendanceStats} />}
       {activeTab === 'marks' && <MarksTab marks={marks} subjectMap={subjectMap} overallPct={overallPct} grade={grade} />}
       {activeTab === 'subjects' && <SubjectsTab subjects={subjects} />}
